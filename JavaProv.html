@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptProv</title>
+</head>
+<body>
+
+    <p id="demo">text</p>
+
+    <img src="iMaGe.jpg" alt="no image :(" id="image">
+
+    <form name = "Form">
+        <input type="text", name="text", id="text">
+        <input type="button" onclick="pressButton()">
+    </form>
+
+    <script>
+        //Uppgift 1:
+        function addera(nr1, nr2)
+        {
+            return(nr1 + nr2)
+        }
+
+        //Uppgift 2:
+        document.getElementById("demo").innerHTML = "Hej"
+
+        //Uppgift 3: (Bilden har id "image")
+        document.getElementById("image").setAttribute("src", "bild.jpg")
+
+        //Uppgift 4:
+        function subtraheraMed1(ar)
+        {
+            var output = []
+            j = 0
+            for (i of ar)
+            {
+                output.push(ar[j] - 1)
+                j += 1
+            }
+            return(output)
+        }
+
+        //Uppgift 5:
+        function pressButton()
+        {
+            alert(document.forms["Form"]["text"].value)
+        }
+    </script>
+</body>
+</html>
